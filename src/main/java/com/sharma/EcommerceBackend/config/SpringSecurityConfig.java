@@ -43,7 +43,12 @@ public class SpringSecurityConfig {
                     @Override
                     public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                         CorsConfiguration cors = new CorsConfiguration();
-                        cors.setAllowedOrigins(Arrays.asList("http://localhost:3000","https://ps-ecommerce-p7b8q6t9c-priyam-sharmas-projects.vercel.app"));
+                        cors.setAllowedOrigins(Arrays.asList(
+                                "http://localhost:3000",
+                                "https://ps-ecommerce-bay.vercel.app/",
+                                "https://ps-ecommerce-git-main-priyam-sharmas-projects.vercel.app/",
+                                "https://ps-ecommerce-p7b8q6t9c-priyam-sharmas-projects.vercel.app/"
+                        ));
                         cors.setAllowCredentials(true);
                         cors.setAllowedMethods(Collections.singletonList("*"));
                         cors.setAllowedHeaders(Collections.singletonList("*"));
