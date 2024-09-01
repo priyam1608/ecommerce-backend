@@ -66,7 +66,7 @@ public class PaymentController {
                 notify.put("email",true);
 
                 paymentLinkJsonObject.put("notify",notify);
-                paymentLinkJsonObject.put("callback_url","http://localhost:3000/payments/"+orderId);
+                paymentLinkJsonObject.put("callback_url","https://ecommerce-backend-production-3930.up.railway.app/payments/"+orderId);
                 paymentLinkJsonObject.put("callback_method","get");
 
                 PaymentLink paymentLink = razorpayClient.paymentLink.create(paymentLinkJsonObject);
