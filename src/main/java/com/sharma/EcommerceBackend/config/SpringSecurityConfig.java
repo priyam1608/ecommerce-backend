@@ -45,7 +45,7 @@ public class SpringSecurityConfig {
                         CorsConfiguration cors = new CorsConfiguration();
                         cors.setAllowedOrigins(Arrays.asList(
                                 "http://localhost:3000",
-                                "https://*.vercel.app/"
+                                "https://ps-ecommerce-bay.vercel.app"
                         ));
                         cors.setAllowCredentials(true);
                         cors.setAllowedMethods(Collections.singletonList("*"));
